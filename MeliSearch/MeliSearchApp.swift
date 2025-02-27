@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct MeliSearchApp: App {
+    @StateObject private var appState = AppState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView().environmentObject(appState)
         }
     }
 }
