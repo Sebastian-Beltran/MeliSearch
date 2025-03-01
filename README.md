@@ -17,6 +17,9 @@ Utilizando MVVM para la distribución de carpetas.
 ![AppScreenDetail](assets/screen_detail.png)
 ![AppScreenCart](assets/screen_cart.png)
 
+## 📷 Arquitectura
+![Architecture](assets/Architecture.png)
+
 ## 🚀 Instalación
 
 ### **1. Clonar el repositorio**
