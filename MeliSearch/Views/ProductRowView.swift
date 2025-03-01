@@ -24,6 +24,7 @@ struct ProductRowView: View {
                 Text(product.title)
                     .font(.headline)
                     .lineLimit(2)
+                    .accessibilityIdentifier("product_\(product.id)")
                 if(product.originalPrice != nil)
                 {
                     Text("$\(product.originalPrice!, specifier: "%.2f")")

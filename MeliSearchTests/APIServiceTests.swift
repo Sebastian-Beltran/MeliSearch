@@ -9,10 +9,10 @@ import XCTest
 @testable import MeliSearch
 
 class APIServiceTests: XCTestCase {
-
+    
     func testFetchProductsSuccess() {
         let expectation = self.expectation(description: "API devuelve productos correctamente")
-
+        
         APIService.shared.fetchProducts(query: "iPhone") { result in
             switch result {
             case .success(let products):
@@ -22,24 +22,25 @@ class APIServiceTests: XCTestCase {
             }
             expectation.fulfill()
         }
-
+        
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testFetchProductsInvalidQuery() {
-        let expectation = self.expectation(description: "API maneja una consulta inválida correctamente")
-
+        let expectation = self.expectation(description: "API maneja una consulta vacía correctamente")
+        
         APIService.shared.fetchProducts(query: "") { result in
             switch result {
-            case .success:
-                XCTFail("No debería haber resultados para una consulta vacía")
+            case .success(let products):
+                XCTAssertTrue(products.isEmpty, "La respuesta debería ser una lista vacía cuando la consulta es vacía")
             case .failure(let error):
-                XCTAssertNotNil(error, "Debe haber un error para una consulta vacía")
+                XCTFail("No debería haber un error, pero ocurrió: \(error.localizedDescription)")
             }
             expectation.fulfill()
         }
-
+        
         waitForExpectations(timeout: 5, handler: nil)
     }
+    
 }
 

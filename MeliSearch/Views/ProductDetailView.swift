@@ -73,7 +73,7 @@ struct ProductDetailView: View {
                 }.buttonStyle(.borderedProminent)
                 
                 Button(action: {
-                    appState.addToCart(product: product)
+                    appState.addProductCart(product: product)
                     presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Agregar al Carrito")

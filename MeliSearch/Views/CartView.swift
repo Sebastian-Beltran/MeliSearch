@@ -53,7 +53,7 @@ struct CartView: View {
                                 Spacer()
 
                                 Button(action: {
-                                    appState.removeFromCart(product: product)
+                                    appState.removeProductCart(product: product)
                                 }) {
                                     Image(systemName: "trash")
                                         .foregroundColor(.red)
