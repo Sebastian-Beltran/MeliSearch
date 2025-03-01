@@ -24,7 +24,13 @@ struct ProductRowView: View {
                 Text(product.title)
                     .font(.headline)
                     .lineLimit(2)
-
+                if(product.originalPrice != nil)
+                {
+                    Text("$\(product.originalPrice!, specifier: "%.2f")")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                        .strikethrough(true, color: .gray)
+                }
                 Text("$\(product.price, specifier: "%.2f")")
                     .font(.subheadline)
                     .foregroundColor(.gray)

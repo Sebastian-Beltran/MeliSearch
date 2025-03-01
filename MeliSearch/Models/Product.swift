@@ -17,22 +17,20 @@ struct Product: Codable, Identifiable {
     let id: String
     let title: String
     let price: Double
-    let currencyID: String
-    let availableQuantity: Int
     let thumbnail: String
     let condition: String
     let permalink: String
+    let originalPrice: Double?
 
     
     enum CodingKeys: String, CodingKey {
         case id
         case title
         case price
-        case currencyID = "currency_id"
-        case availableQuantity = "available_quantity"
         case thumbnail
         case condition
         case permalink
+        case originalPrice = "original_price"
     }
 }
 

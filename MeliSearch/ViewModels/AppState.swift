@@ -2,9 +2,10 @@ import Foundation
 
 class AppState: ObservableObject {
     @Published var searchResults: [Product] = []
+    @Published var cart: [Product] = []
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
-
+    
     func searchProducts(query: String) {
         guard !query.isEmpty else {
             errorMessage = "Por favor, ingresa un término de búsqueda."
@@ -13,7 +14,7 @@ class AppState: ObservableObject {
         
         isLoading = true
         errorMessage = nil
-
+        
         APIService.shared.fetchProducts(query: query) { result in
             DispatchQueue.main.async {
                 self.isLoading = false
@@ -28,5 +29,12 @@ class AppState: ObservableObject {
                 }
             }
         }
+    }
+    func addToCart(product: Product) {
+        cart.append(product)
+    }
+    
+    func removeFromCart(product: Product) {
+        cart.removeAll { $0.id == product.id }
     }
 }
