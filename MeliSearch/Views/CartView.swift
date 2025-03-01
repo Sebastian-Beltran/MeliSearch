@@ -38,7 +38,13 @@ struct CartView: View {
                                 VStack(alignment: .leading) {
                                     Text(product.title)
                                         .font(.headline)
-
+                                    if(product.originalPrice != nil)
+                                    {
+                                        Text("$\(product.originalPrice!, specifier: "%.2f")")
+                                            .font(.caption)
+                                            .foregroundColor(.gray)
+                                            .strikethrough(true, color: .gray)
+                                    }
                                     Text("$\(product.price, specifier: "%.2f")")
                                         .font(.subheadline)
                                         .foregroundColor(.green)
@@ -57,7 +63,7 @@ struct CartView: View {
                     }
                 }
             }
-            .navigationTitle("Tu carrito de compras")
+            .navigationTitle("Tu carrito (\(appState.cart.count))")
         }
     }
 }

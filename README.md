@@ -1,4 +1,4 @@
-# MercadoLibreSearch
+# MeliSearch
 
 Aplicación iOS desarrollada en SwiftUI que permite buscar productos en MercadoLibre, ver sus detalles y agregarlos a un carrito de compras.
 
@@ -10,19 +10,23 @@ Aplicación iOS desarrollada en SwiftUI que permite buscar productos en MercadoL
 - Soporte para Pull-to-Refresh en la lista de productos.
 - Manejo de errores y estado de carga.
 
+## 📷 Capturas de Pantalla
+![AppScreenList](assets/screen_list.png)
+![AppScreenDetail](assets/screen_detail.png)
+![AppScreenCart](assets/screen_cart.png)
+
 ## 🚀 Instalación
 
 ### **1. Clonar el repositorio**
 ```bash
-git clone https://github.com/tuUsuario/MercadoLibreSearch.git
-cd MercadoLibreSearch
+https://github.com/Sebastian-Beltran/MeliSearch.git
 ```
 
 ### **2. Abrir el proyecto en Xcode**
 ```bash
 xed .
 ```
-O abre manualmente el archivo `MercadoLibreSearch.xcodeproj` en Xcode.
+O abre manualmente el archivo `MeliSearch.xcodeproj` en Xcode.
 
 ### **3. Instalar dependencias (si aplica)**
 Este proyecto no utiliza librerías externas. Si decides agregar alguna, usa Swift Package Manager.
@@ -43,20 +47,13 @@ Si las imágenes no se cargan, asegúrate de haber agregado esta configuración 
 </dict>
 ```
 
-## 📷 Capturas de Pantalla (Opcional)
-_Agrega imágenes de la app aquí_
 
 ## ✅ Pruebas Unitarias
 Para ejecutar las pruebas:
 ```bash
 Cmd + U
 ```
-Las pruebas se encuentran en la carpeta `MercadoLibreSearchTests/`.
+Las pruebas se encuentran en la carpeta `MeliSearchTests/`.
 
-## 📄 Licencia
-MIT License. Puedes usar y modificar este código libremente.
 
----
-
-🚀 ¡Disfruta programando! Si tienes dudas, abre un issue o contribuye al proyecto. 😃
 
