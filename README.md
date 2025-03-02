@@ -17,8 +17,21 @@ Utilizando MVVM como arquitectura.
 ![AppScreenDetail](assets/screen_detail.png)
 ![AppScreenCart](assets/screen_cart.png)
 
-## 🗂️ Arquitectura
+## 📚 Arquitectura
 ![Architecture](assets/Architecture.png)
+
+## 🗂️ Estructura ficheros
+```bash
+MeliSearch/
+├── Models
+├   ├── Product
+├── Networking
+├── ViewModels
+├── Views
+── MeliSearchApp
+├── MeliSearchTests
+├── MeliSearchUITests
+```
 
 ## 🚀 Instalación
 
