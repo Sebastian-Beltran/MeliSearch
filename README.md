@@ -21,7 +21,7 @@ Utilizando MVVM como arquitectura.
 ![Architecture](assets/Architecture.png)
 
 ## 🗂️ Estructura de archivos
-
+```bash
 MeliSearch/
 ├── Models/            # Definición de los modelos de datos (Product, etc.)
 │   ├── Product.swift
@@ -44,7 +44,7 @@ MeliSearch/
 │
 ├── MeliSearchUITests/  # Pruebas de interfaz de usuario (UI Tests)
 
-
+```
 ## 🚀 Instalación
 
 ### **1. Clonar el repositorio**
