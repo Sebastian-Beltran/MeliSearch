@@ -20,18 +20,30 @@ Utilizando MVVM como arquitectura.
 ## 📚 Arquitectura
 ![Architecture](assets/Architecture.png)
 
-## 🗂️ Estructura ficheros
-```bash
+## 🗂️ Estructura de archivos
+
 MeliSearch/
-├── Models
-├   ├── Product
-├── Networking
-├── ViewModels
-├── Views
-── MeliSearchApp
-├── MeliSearchTests
-├── MeliSearchUITests
-```
+├── Models/            # Definición de los modelos de datos (Product, etc.)
+│   ├── Product.swift
+│
+├── Networking/        # Servicio de red para consumo del API
+│   ├── APIService.swift
+│
+├── ViewModels/        # Lógica de presentación y manejo de estado
+│   ├── ProductViewModel.swift
+│   ├── CartViewModel.swift
+│
+├── Views/             # Vistas de la app en SwiftUI
+│   ├── MainView.swift
+│   ├── ProductDetailView.swift
+│   ├── CartView.swift
+│
+├── MeliSearchApp.swift # Punto de entrada de la aplicación
+│
+├── MeliSearchTests/    # Pruebas unitarias
+│
+├── MeliSearchUITests/  # Pruebas de interfaz de usuario (UI Tests)
+
 
 ## 🚀 Instalación
 
