@@ -45,7 +45,7 @@ MeliSearch/
 │   ├── AppStateTests.swift
 │
 ├── MeliSearchUITests/  # Pruebas de interfaz de usuario (UI Tests)
-│   ├── MeliSearchUITests.swift
+    ├── MeliSearchUITests.swift
 
 ```
 ## 🚀 Instalación
