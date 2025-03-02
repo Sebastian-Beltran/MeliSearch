@@ -24,25 +24,28 @@ Utilizando MVVM como arquitectura.
 ```bash
 MeliSearch/
 ├── Models/            # Definición de los modelos de datos (Product, etc.)
-│   ├── Product.swift
+│   ├── Product.swift  
 │
 ├── Networking/        # Servicio de red para consumo del API
 │   ├── APIService.swift
 │
 ├── ViewModels/        # Lógica de presentación y manejo de estado
-│   ├── ProductViewModel.swift
-│   ├── CartViewModel.swift
+│   ├── AppState.swift
 │
 ├── Views/             # Vistas de la app en SwiftUI
+│   ├── CartView.swift
 │   ├── MainView.swift
 │   ├── ProductDetailView.swift
-│   ├── CartView.swift
+│   ├── ProductRowView.swift
 │
-├── MeliSearchApp.swift # Punto de entrada de la aplicación
+├── MeliSearchApp.swift # Punto de inicial de la aplicación
 │
 ├── MeliSearchTests/    # Pruebas unitarias
+│   ├── APIServiceTests.swift
+│   ├── AppStateTests.swift
 │
 ├── MeliSearchUITests/  # Pruebas de interfaz de usuario (UI Tests)
+│   ├── MeliSearchUITests.swift
 
 ```
 ## 🚀 Instalación
