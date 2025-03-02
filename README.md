@@ -1,7 +1,7 @@
 # MeliSearch
 
 Aplicación iOS desarrollada en SwiftUI que permite buscar productos en la API de MercadoLibre, ver sus detalles y agregarlos a un carrito de compras.
-Utilizando MVVM como arquictectura.
+Utilizando MVVM como arquitectura.
 
 
 ## 📌 Características
