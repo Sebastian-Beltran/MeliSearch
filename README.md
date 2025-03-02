@@ -1,7 +1,7 @@
 # MeliSearch
 
-Aplicación iOS desarrollada en SwiftUI que permite buscar productos en en la API de MercadoLibre, ver sus detalles y agregarlos a un carrito de compras.
-Utilizando MVVM para la distribución de carpetas.
+Aplicación iOS desarrollada en SwiftUI que permite buscar productos en la API de MercadoLibre, ver sus detalles y agregarlos a un carrito de compras.
+Utilizando MVVM como arquictectura.
 
 
 ## 📌 Características
@@ -58,7 +58,4 @@ Para ejecutar las pruebas:
 ```bash
 Cmd + U
 ```
-Las pruebas se encuentran en la carpeta `MeliSearchTests/`.
-
-
-
+Las pruebas se encuentran en la carpeta `MeliSearchTests/` y `MeliSearchUITest/`.
