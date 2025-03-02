@@ -17,7 +17,7 @@ Utilizando MVVM como arquictectura.
 ![AppScreenDetail](assets/screen_detail.png)
 ![AppScreenCart](assets/screen_cart.png)
 
-## 📷 Arquitectura
+## 🗂️ Arquitectura
 ![Architecture](assets/Architecture.png)
 
 ## 🚀 Instalación
@@ -58,4 +58,4 @@ Para ejecutar las pruebas:
 ```bash
 Cmd + U
 ```
-Las pruebas se encuentran en la carpeta `MeliSearchTests/` y `MeliSearchUITest/`.
+Las pruebas se encuentran en la carpeta `MeliSearchTests/` y `MeliSearchUITests/`.
