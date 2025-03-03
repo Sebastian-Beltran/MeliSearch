@@ -31,9 +31,13 @@ class AppState: ObservableObject {
         }
     }
     func addProductCart(product: Product) {
-        cart.append(product)
+        DispatchQueue.global(qos: .userInitiated).async {
+            DispatchQueue.main.async {
+                self.cart.append(product)
+            }
+        }
     }
-
+    
     func removeProductCart(product: Product) {
         cart.removeAll { $0.id == product.id }
     }

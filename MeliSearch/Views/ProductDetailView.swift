@@ -75,12 +75,11 @@ struct ProductDetailView: View {
                 Button(action: {
                     appState.addProductCart(product: product)
                     presentationMode.wrappedValue.dismiss()
+
                 }) {
                     Text("Agregar al Carrito")
                         .frame(maxWidth: .infinity)
                         .padding()
-
-
                         .cornerRadius(10)
 
                 }.buttonStyle(.bordered)
