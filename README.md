@@ -11,6 +11,7 @@ Utilizando MVVM como arquitectura.
 - Visualización de los productos en el carrito y opción para eliminarlos.
 - Soporte para Pull-to-Refresh en la lista de productos.
 - Manejo de errores y estado de carga.
+- Uso de logs (AppLoger).
 
 ## 📷 Capturas de Pantalla
 ![AppScreenList](assets/screen_list.png)
@@ -28,6 +29,9 @@ MeliSearch/
 │
 ├── Networking/        # Servicio de red para consumo del API
 │   ├── APIService.swift
+│
+├── Utils/             # Utilidades dentro del app
+│   ├── AppLogger.swift
 │
 ├── ViewModels/        # Lógica de presentación y manejo de estado
 │   ├── AppState.swift
